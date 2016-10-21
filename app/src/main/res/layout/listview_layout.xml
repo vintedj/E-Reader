@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_centerVertical="true"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="0px"
+        android:paddingRight="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/isi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/nama"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"/>
+
+            <TextView android:id="@+id/gambar_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/nama"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gambar"
+            android:layout_below="@id/nama"
+            android:textSize="13dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
